@@ -1,4 +1,4 @@
 openai>=1.40
 pydantic>=2.7
-mcp>=2.0,<3
+-r mcp_server/requirements.txt
 pytest>=8.0

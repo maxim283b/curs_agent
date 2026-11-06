@@ -18,6 +18,15 @@ pip install -r mcp_server/requirements.txt
 python -m mcp_server.server
 ```
 
+Все команды выполняются из корня репозитория. HTTP для локального клиента:
+
+```powershell
+python -m mcp_server.server --http
+```
+
+Сервер использует FastMCP 4.1.6. Endpoint: `http://127.0.0.1:8000/mcp`.
+Проверка stdio без ручного запуска: `python -m scripts.check_mcp`.
+
 По умолчанию используется транспорт stdio. Для подключения из другой машины
 настройте streamable HTTP и защитите endpoint токеном. Colab не может обратиться
 к `localhost` компьютера, на котором установлен симулятор.
